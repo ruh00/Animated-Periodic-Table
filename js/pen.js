@@ -196,7 +196,7 @@ function animate() {
   requestAnimationFrame(animate);
 }
 
-fetch("/periodic-table-data.json").
+fetch("periodic-table-data.json").
 then(response => response.json()).
 then(data => {
   createElements(data.elements);
